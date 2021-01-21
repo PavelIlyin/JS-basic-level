@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        /**
+         * 1. Функция складывает два переданных числа.
+         * @param {number} a Первое число, которое будет складываться в функции.
+         * @param {number} b Второе число, которое будет складываться в функции.
+         * @returns{number} Возвращает число, получившееся в результате сложения двух чисел.
+         */
+        function addition(a, b) {
+            return a + b
+        }
+
+        let aNum = +prompt('Введите для сложения первое число');
+        let bNum = +prompt('Введите для сложения второе число');
+        alert(addition(aNum, bNum))
+
+        /**
+         * 2. Функция отнимает первое переданное число от второго.
+         * @param {number} c Первое число, из которого будет происходить вычитание второго числа в функции.
+         * @param {number} d Второе число, которое будет отниматься от первого числа в функции.
+         * @returns{number} Возвращает число, получившееся в результате разности двух чисел.
+         */
+        function subtraction(c, d) {
+            return c - d
+        }
+
+        let cNum = +prompt('Введите для получения разности первое число');
+        let dNum = +prompt('Введите для получения разности второе число');
+        alert(subtraction(cNum, dNum))
+
+        /**
+         * 3. Функция умножет первое переданное число на второе.
+         * @param {number} e Первое число, которое будет умножено на второе число в функции.
+         * @param {number} f Второе число, на которое будет умножено первое число в функции.
+         * @returns{number} Возвращает число, получившееся в результате умножения двух чисел.
+         */
+        function multiplication(e, f) {
+            return e * f
+        }
+
+        let eNum = +prompt('Введите для умножения первое число');
+        let fNum = +prompt('Введите для умножения второе число');
+        alert(multiplication(eNum, fNum))
+
+        /**
+         * 4. Функция делит первое переданное число на второе.
+         * @param {number} g Первое число, из которое будет делиться на второе число в функции.
+         * @param {number} h Второе число, на которое будет делиться первое число в функции.
+         * @returns{number} Возвращает число, получившееся в результате деления двух чисел.
+         */
+        function division(g, h) {
+            return g / h
+        }
+
+        let gNum = +prompt('Введите для деления первое число');
+        let hNum = +prompt('Введите для деления второе число');
+        alert(division(gNum, hNum))
+    </script>
+</body>
+
+</html>
