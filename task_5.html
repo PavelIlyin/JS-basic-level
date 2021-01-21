@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        function mathOperation(arg1, arg2, operation) {
+            let result = null;
+            switch (operation) {
+                case 'сложение':
+                    result = arg1 + arg2;
+                    return result;
+                case '+':
+                    result = arg1 + arg2;
+                    return result;
+                case 'разность':
+                    result = arg1 - arg2;
+                    return result;
+                case '-':
+                    result = arg1 - arg2;
+                    return result;
+                case 'произведение':
+                    result = arg1 * arg2;
+                    return result;
+                case '*':
+                    result = arg1 * arg2;
+                    return result;
+                case 'деление':
+                    result = arg1 / arg2;
+                    return result;
+                case '/':
+                    result = arg1 / arg2;
+                    return result;
+            }
+        }
+
+        let num1 = +prompt('Введите первое число');
+        let act = prompt('Введите название операции и просто операнд: ' +
+            '\n' + ' "сложение" или + ' + '\n' + ' "разность" или - ' + '\n' +
+            ' "произведение" или * ' + '\n' + ' "деление" или / ');
+        let num2 = +prompt('Введите второе число');
+
+        alert('Ответ: ' + mathOperation(num1, num2, act));
+    </script>
+</body>
+
+</html>
